@@ -23,7 +23,7 @@ ul {
   list-style: none;
   position: relative;
   left: 50px;
-  bottom: 40px;
+  bottom: 120px;
   text-transform: capitalize;
 }
 
@@ -35,6 +35,10 @@ ul {
   padding: 20px;
 }
 
+.player {
+  position: relative;
+  bottom: 150px;
+}
 .time {
   position: relative;
   text-align: right;
@@ -44,13 +48,13 @@ ul {
 }
 .icon {
   position: relative;
-  bottom: 200px;
+  bottom: 290px;
   left: 500px;
 }
 .current {
   position: relative;
   text-align: right;
-  bottom: 350px;
+  bottom: 440px;
   font-size: 75px;
   right: 100px;
 }
@@ -67,32 +71,32 @@ ul {
 .search,
 .btn-primary {
   position: relative;
-  bottom: 290px;
+  bottom: 360px;
   left: 250px;
   font-size: 30px;
 }
 
 .btn-success {
   position: relative;
-  bottom: 240px;
+  bottom: 300px;
   right: 150px;
 }
 
 .btn-secondary {
   position: relative;
   right: 520px;
-  bottom: 270px;
+  bottom: 370px;
   font-size: 45px;
 }
 .btn-warning {
   position: relative;
   right: -35px;
-  bottom: 270px;
+  bottom: 370px;
   font-size: 45px;
 }
 
 .info {
   text-align: center;
   position: relative;
-  bottom: 250px;
+  bottom: 280px;
 }
