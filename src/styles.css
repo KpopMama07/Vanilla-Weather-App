@@ -29,22 +29,22 @@ ul {
   left: -5px;
   bottom: 150px;
 }
-.fa-cloud {
+.icon {
   position: relative;
-  bottom: 100px;
+  bottom: 200px;
   left: 500px;
 }
 .current {
   position: relative;
   text-align: right;
-  bottom: 175px;
+  bottom: 350px;
   font-size: 75px;
-  right: 100px;
+  right: 130px;
 }
 .row {
   text-align: center;
   position: relative;
-  bottom: 100px;
+  bottom: 250px;
 }
 .list-group {
   border: solid;
@@ -53,26 +53,26 @@ ul {
 .search,
 .btn-primary {
   position: relative;
-  bottom: 85px;
+  bottom: 220px;
   left: 250px;
   font-size: 30px;
 }
 
 .btn-success {
   position: relative;
-  bottom: 25px;
+  bottom: 175px;
   right: 150px;
 }
 
 .btn-secondary {
   position: relative;
   right: 600px;
-  bottom: 80px;
+  bottom: 180px;
   font-size: 45px;
 }
 .btn-warning {
   position: relative;
   right: -75px;
-  bottom: 80px;
+  bottom: 180px;
   font-size: 45px;
 }

@@ -53,6 +53,11 @@ function showTemperature(response) {
   main.innerHTML = temperature + "℃";
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
+  );
 }
 
 function searchCity(city) {
@@ -69,7 +74,7 @@ function search(event) {
   let searchInput = document.querySelector("#searchInput").value;
   let h1 = document.querySelector("h1");
   if (searchInput.value === "") {
-    h1.innerHTML = "searchInput";
+    h1.innerHTML = "#searchInput";
   } else {
     h1.innerHTML = "Please enter your city!";
     searchCity(searchInput);
