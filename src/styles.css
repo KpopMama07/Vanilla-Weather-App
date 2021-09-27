@@ -1,0 +1,78 @@
+body {
+  font-family: "Architects Daughter", cursive;
+}
+
+h1,
+header {
+  text-align: center;
+  margin: 20px 0px 0px 10px;
+}
+
+header {
+  font-size: 40px;
+}
+ul {
+  font-size: 30px;
+  list-style: none;
+  position: relative;
+  left: 50px;
+  bottom: 40px;
+}
+.container {
+  border: 10px solid lightblue;
+  width: 65%;
+}
+.time {
+  position: relative;
+  text-align: right;
+  font-size: 48px;
+  left: -5px;
+  bottom: 150px;
+}
+.fa-cloud {
+  position: relative;
+  bottom: 100px;
+  left: 500px;
+}
+.current {
+  position: relative;
+  text-align: right;
+  bottom: 175px;
+  font-size: 75px;
+  right: 100px;
+}
+.row {
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+.list-group {
+  border: solid;
+  color: lightblue;
+}
+.search,
+.btn-primary {
+  position: relative;
+  bottom: 85px;
+  left: 250px;
+  font-size: 30px;
+}
+
+.btn-success {
+  position: relative;
+  bottom: 25px;
+  right: 150px;
+}
+
+.btn-secondary {
+  position: relative;
+  right: 600px;
+  bottom: 80px;
+  font-size: 45px;
+}
+.btn-warning {
+  position: relative;
+  right: -75px;
+  bottom: 80px;
+  font-size: 45px;
+}
