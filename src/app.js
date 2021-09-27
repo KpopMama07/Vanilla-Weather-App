@@ -42,6 +42,7 @@ let month = months[now.getMonth()];
 weekday.innerHTML = `Today is ${day}, ${month} ${date}, ${year}`;
 
 function showTemperature(response) {
+  celsiusTemperature = response.data.main.temp;
   let temperature = Math.round(response.data.main.temp);
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
@@ -101,3 +102,24 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let celsiusTemperature = null;
+
+function showFarenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#actualDegree");
+  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(farenheitTemperature) + "°F";
+}
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFarenheitTemperature);
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#actualDegree");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature) + "°C";
+}
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", showCelsiusTemperature);
