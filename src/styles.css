@@ -45,7 +45,8 @@ ul {
 .row {
   text-align: center;
   position: relative;
-  bottom: 250px;
+  bottom: 270px;
+  left: 60px;
 }
 .list-group {
   border: solid;
@@ -54,26 +55,32 @@ ul {
 .search,
 .btn-primary {
   position: relative;
-  bottom: 220px;
+  bottom: 290px;
   left: 250px;
   font-size: 30px;
 }
 
 .btn-success {
   position: relative;
-  bottom: 175px;
+  bottom: 240px;
   right: 150px;
 }
 
 .btn-secondary {
   position: relative;
-  right: 600px;
-  bottom: 180px;
+  right: 520px;
+  bottom: 270px;
   font-size: 45px;
 }
 .btn-warning {
   position: relative;
-  right: -75px;
-  bottom: 180px;
+  right: -35px;
+  bottom: 270px;
   font-size: 45px;
+}
+
+.info {
+  text-align: center;
+  position: relative;
+  bottom: 250px;
 }
