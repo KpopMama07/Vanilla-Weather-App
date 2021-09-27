@@ -19,10 +19,15 @@ ul {
   bottom: 40px;
   text-transform: capitalize;
 }
-.container {
+
+.weather-app {
   border: 10px solid lightblue;
-  width: 65%;
+  max-width: 1000px;
+  max-height: 800px;
+  margin: 30px auto;
+  padding: 20px;
 }
+
 .time {
   position: relative;
   text-align: right;
