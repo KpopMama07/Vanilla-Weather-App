@@ -74,13 +74,15 @@ searchCity("Shibukawa");
 
 function search(event) {
   event.preventDefault();
-  let searchInput = document.querySelector("#searchInput").value;
+  let searchInput = document.querySelector("#searchInput");
   let h1 = document.querySelector("h1");
   if (searchInput.value === "") {
     h1.innerHTML = "#searchInput";
   } else {
     h1.innerHTML = "Please enter your city!";
-    searchCity(searchInput);
+    searchCity(searchInput.value);
+
+    searchInput.value = "";
   }
 }
 
