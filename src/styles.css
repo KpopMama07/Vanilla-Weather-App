@@ -12,7 +12,7 @@ body {
 h1,
 header {
   text-align: center;
-  margin: 20px 0px 0px 10px;
+  margin: 10px 0px 0px 5px;
 }
 
 header {
@@ -23,7 +23,7 @@ ul {
   list-style: none;
   position: relative;
   left: 50px;
-  bottom: 120px;
+  bottom: 140px;
   text-transform: capitalize;
 }
 
@@ -31,7 +31,7 @@ ul {
   border: 10px solid lightblue;
   max-width: 1000px;
   max-height: 800px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 20px;
 }
 
@@ -42,8 +42,8 @@ ul {
 .time {
   position: relative;
   text-align: right;
-  font-size: 48px;
-  left: -5px;
+  font-size: 65px;
+  left: -10px;
   bottom: 150px;
 }
 .icon {
@@ -57,46 +57,62 @@ ul {
   bottom: 440px;
   font-size: 75px;
   right: 100px;
+  color: #cab8ff;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 .row {
   text-align: center;
   position: relative;
-  bottom: 270px;
+  bottom: 290px;
   left: 60px;
 }
 .list-group {
   border: solid;
   color: lightblue;
 }
+
+.day {
+  color: #1e2a78;
+}
+.temp-max {
+  color: #7c83fd;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.temp-min {
+  color: #6f69ac;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
 .search,
 .btn-primary {
   position: relative;
-  bottom: 360px;
+  bottom: 400px;
   left: 250px;
   font-size: 30px;
 }
 
 .btn-success {
   position: relative;
-  bottom: 300px;
+  bottom: 350px;
   right: 150px;
 }
 
 .btn-secondary {
   position: relative;
-  right: 520px;
-  bottom: 370px;
+  right: 540px;
+  bottom: 390px;
   font-size: 45px;
 }
 .btn-warning {
   position: relative;
   right: -35px;
-  bottom: 370px;
+  bottom: 390px;
   font-size: 45px;
 }
 
 .info {
   text-align: center;
   position: relative;
-  bottom: 280px;
+  bottom: 350px;
 }
