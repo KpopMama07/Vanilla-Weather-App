@@ -127,25 +127,35 @@ let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", showCelsiusTemperature);
 
 function displayForecast(response) {
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
-
   let forecastHTML = `<div class = "row">`;
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
     <div class="col-2">
           <div class="card-1" style="width: 7rem">
             <ul class="list-group">
-              <li class="list-group-item"><small class="day" id="day">${day}</small></li>
-              <li class="list-group-item"><small class="row-icon" id="row-icon">☁</small></li>
-              <li class="list-group-item"><small class="forecast-temp" id="forecast-temp"><span class="temp-max">29° </span><span class="temp-min">9°</span> </small></li>
+              <li class="list-group-item"><small class="day" id="day">${formatDaily(
+                forecastDay.dt
+              )}</small></li>
+              <li class="list-group-item"><img src="http://openweathermap.org/img/wn/${
+                forecastDay.weather[0].icon
+              }@2x.png" alt="" width="42" /></li>
+              <li class="list-group-item"><small class="forecast-temp" id="forecast-temp"><span class="temp-max">${Math.round(
+                forecastDay.temp.max
+              )}° </span><span class="temp-min">${Math.round(
+          forecastDay.temp.min
+        )}°</span> </small></li>
             </ul>
           </div>
         </div>
         `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
@@ -159,4 +169,3 @@ function getForecast(coordinates) {
 
   axios.get(apiUrl).then(displayForecast);
 }
-displayForecast();
