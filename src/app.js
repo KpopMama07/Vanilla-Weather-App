@@ -57,7 +57,7 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
@@ -140,10 +140,10 @@ function displayForecast(response) {
     <div class="col-2">
           <div class="card-1" style="width: 7rem">
             <ul class="list-group">
-              <li class="list-group-item"><small class="day" id="day">${formatDaily(
+              <li class="list-group-item"><small class="day" id="day">${formatDay(
                 forecastDay.dt
               )}</small></li>
-              <li class="list-group-item"><img src="http://openweathermap.org/img/wn/${
+              <li class="list-group-item"><img src="https://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
               }@2x.png" alt="" width="42" /></li>
               <li class="list-group-item"><small class="forecast-temp" id="forecast-temp"><span class="temp-max">${Math.round(
